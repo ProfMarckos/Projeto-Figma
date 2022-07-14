@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Rationale&family=Salsa&display=swap');
 *{
     margin: 0;
+    background-color: black;
 }
 header{
     background-color: black;
     width: 100vw;
     height: 100px;
     position: fixed;
-           
+    z-index: 2;           
 }
 nav{
     display: flex;
-   justify-content: center;
+    justify-content: center;
     max-width: 1440px;
     margin: auto;
     
@@ -35,4 +36,82 @@ nav a:hover{
 
 .login{
 align-self: center;
+height: 40px;
+}
+main{
+    height: 800px;
+    justify-content: center;
+    display: flex;
+}
+.faixa{
+    position: absolute;
+    display: flex;
+    top: 200px;
+    z-index: 1;
+    height: 150px;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-self: center;
+    box-shadow: 5px 5px 10px;
+}
+h1{
+    width: 1440px;
+    margin: auto;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-family: Salsa;
+    font-size: 75px;
+    font-weight: 100;
+    background:none
+}
+.aviso{
+    font-family: Rationale;
+    text-align: center;
+    padding-top: 20px;
+    height: 97px;
+    width: 490px;
+    left: 400px;
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 500px;
+    background-color: rgba(200, 200, 200, 0.7);
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px;
+}
+.div1{
+    height: 30px;
+    background-color: #1839A1;
+    width: 1440px;
+    margin: auto;
+}
+section{
+    height: 800px;
+    justify-content: center;
+    display: flex;
+    
+}
+article{
+    font-family: Rationale; 
+    left: 350px;
+    position: absolute;
+    color: white;
+    top: 1000px;
+    z-index: 1;
+    height: 150px;
+    width: 400px;
+    background: none;
+       
+}
+h2{
+    font-size: 50px;
+    height: 80px;
+    font-weight: lighter;
+    background: none;
+}
+h3{
+    font-size: 30px;
+    font-weight: lighter;
+    background: none;
 }
