@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big Rock Sports</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="js/script.js"></script>
 </head>
 
@@ -72,24 +73,28 @@
     </section>
     <section class="produtos">
         <div class="camisas">
+            
             <div class="item1">
                 <img class="camisa" src="imagens/france.png" alt="">
                 <div class="fundoCamisa">
                     <h2>Camisa seleção França <br><strong>R$ 150,00</strong></h2>
                 </div>
             </div>
+
             <div class="item2">
                 <img class="camisa" src="imagens/brazil.png" alt="">
                 <div class="fundoCamisa">
                     <h2>Camisa seleção Brasil<br><strong>R$ 150,00</strong></h2>
                 </div>
             </div>
+
             <div class="item3">
                 <img class="camisa" src="imagens/portugal.png" alt="">
                 <div class="fundoCamisa">
                     <h2>Camisa seleção Portugal<br><strong>R$ 150,00</strong></h2>
                 </div>
             </div>
+
             <div class="item4">
                 <img class="camisa" src="imagens/argentina.png" alt="">
                 <div class="fundoCamisa">
@@ -98,6 +103,12 @@
             </div>
         </div>
     </section>
+    <div class="overlay">
+        <span class="fechar" onclick="fecharOverlay()">&#215</span>
+        <div class="caixa">
+            <img src="imagens/Confirma.png" alt="">
+        </div>
+    </div>
     <footer>
         <nav class="rodape">
             <img class="logo" src="imagens/BigRockSports.png" alt="">
@@ -108,11 +119,19 @@
             <div class="whats">
                 <img src="imagens/whatsapp.svg" alt="">
                 <h3>(11) 9.1234-5678</h3>
-            </div>
-            
-        </nav>
-        
+            </div>            
+        </nav>        
     </footer>
-</body>
 
+    <script>
+        function abrirOverlay(){
+            document.getElementsByClassName("overlay")[0].style.display="block"
+        }
+        function fecharOverlay(){
+            document.getElementsByClassName("overlay")[0].style.display="none"
+        }
+    </script>
+    
+    
+</body>
 </html>
